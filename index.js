@@ -100,7 +100,7 @@ bot.on('message', function(message){
 		case "stop":
 			message.channel.sendMessage(message.author.toString() + " Este comando ainda está com problema use o skip até o final para parar a lista");
 		//	var server = servers[message.guild.id];
-			//if(message.guild.voiceConnection) message.guild.voiceConnection.disconnect();
+		//if(message.guild.voiceConnection) message.guild.voiceConnection.disconnect();
 		break;
 
 
