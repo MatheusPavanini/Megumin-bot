@@ -72,12 +72,12 @@ bot.on('message', function(message){
 
 		case "play":
 			if(!args[1]){
-				message.member.guild.roles.find("Manda um link ai krai");
+				message.member.guild.roles.find("Insira um link");
 				return;
 			}
 
 			if(!message.member.voiceChannel){
-				message.channel.sendMessage("Você tem q ta num canal seu corno");
+				message.channel.sendMessage("Precisa ta em um canal");
 				return;
 			}
 
@@ -98,9 +98,9 @@ bot.on('message', function(message){
 		break;
 
 		case "stop":
-			//message.channel.sendMessage(message.author.toString() + " Use o skip até o final");
-			var server = servers[message.guild.id];
-			if(message.guild.voiceConnection) message.guild.voiceConnection.disconnect();
+			message.channel.sendMessage(message.author.toString() + " Este comando ainda está com problema use o skip até o final para parar a lista");
+		//	var server = servers[message.guild.id];
+			//if(message.guild.voiceConnection) message.guild.voiceConnection.disconnect();
 		break;
 
 
