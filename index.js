@@ -32,24 +32,6 @@ bot.on("guildMemberAdd", function(member){
 
 });
 */
-bot.on('message', message => {
-  if(message.content === '!daniel'){
-      message.reply('Daniel safada');
-  }
-});
-
-bot.on('message', message => {
-  if(message.content === '!funk'){
-      message.reply('Você quis dizer a musica dos deuses?');
-			return
-  }
-});
-
-bot.on('message', message => {
-  if(message.content === '!Megumin'){
-      message.reply('Melhor grill');
-  }
-});
 //primeira parte
 
 //segunda parte
@@ -64,6 +46,18 @@ bot.on('message', function(message){
 
 		case "ping":
 			message.channel.sendMessage("Pong!");
+		break;
+
+		case "funk":
+			message.channel.sendMessage("Você quis dizer a musica dos deuses?");
+		break;
+
+		case "megumin":
+			message.channel.sendMessage("Você quis dizer a best grill?");
+		break;
+
+		case "daniel":
+			message.channel.sendMessage("A tal da safada?");
 		break;
 
 		case "notice"://terceira parte
