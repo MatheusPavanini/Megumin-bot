@@ -61,7 +61,7 @@ bot.on('message', function(message){
 		break;
 
 		case "notice"://terceira parte
-			message.channel.sendMessage(message.author.toString() + "Bom dia sua safada")
+			message.channel.sendMessage(message.author.toString() + " Bom dia sua safada")
 		break;
 
 		case "play":
@@ -77,8 +77,7 @@ bot.on('message', function(message){
 
 			if(!servers[message.guild.id]) servers[message.guild.id] = {
 				queue: []
-			};
-
+};
 			var server = servers[message.guild.id];
 			server.queue.push(args[1]);
 			if(!message.guild.voiceConnection) message.member.voiceChannel.join().then(function(connection){
